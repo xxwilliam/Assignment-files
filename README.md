@@ -3,6 +3,37 @@
 <html>
 <body>
  
+ #!/usr/bin/env ruby
+# Usage: gitio URL [CODE]
+#
+# Turns a github.com URL
+#  into a git.io URL
+#
+# Copies the git.io URL to your clipboard.
+
+url  = ARGV[0]
+code = ARGV[1]
+
+if url !~ /^(https?:\/\/)?(gist\.)?github.com/
+  abort "* github.com URLs only"
+end
+
+if url !~ /^http/
+  url = "https://#{url}"
+end
+
+if code
+  code = "-F code=#{code}"
+end
+
+output = `curl -i http://git.io -F 'url=#{url}' #{code} 2> /dev/null`
+if output =~ /Location: (.+)\n?/
+  puts $1
+  `echo #$1 | pbcopy`
+else
+  puts output
+end
+ 
  
 <h2>Link Titles</h2>
 <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
