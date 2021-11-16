@@ -6,6 +6,9 @@
  <p><a href="https://github.com/xxwilliam/info-about-me/settings/pages#:~:text=xxwilliam.github.io/info%2Dabout%2Dme/">Visit info-about-me</a></p> 
  <h2>Button as a Links</h2>
 
+<p><a href="https://www.xxwilliam.github.io">Visit info-about-me!</a></p> 
+ 
+ 
 <p>Click the button to go to the HTML tutorial.</p>
 
 <button onclick="document.location='github.com/xxwilliam/info-about-me'">info-about-me</button> 
