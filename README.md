@@ -4,7 +4,7 @@
 <body>
  
 
-<h2>My First JavaScript</h2>
+<h2>info about me</h2>
 
 <button type="button"
 onclick="info-about-me">
