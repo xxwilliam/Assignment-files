@@ -25,7 +25,7 @@ Click me to display Date and Time.</button>
 <p><a href="https://www.xxwilliam.github.io">Visit info-about-me!</a></p> 
  
  
-<p>Click the button to go to the HTML tutorial.</p>
+<p>Click for info about me</p>
 
 <button onclick="document.location='github.com/xxwilliam/info-about-me'">info-about-me</button> 
   
