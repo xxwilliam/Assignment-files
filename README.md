@@ -7,7 +7,7 @@
 <h2>My First JavaScript</h2>
 
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="info-about-me">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>
