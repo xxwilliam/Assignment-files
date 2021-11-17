@@ -3,36 +3,14 @@
 <html>
 <body>
  
- #!/usr/bin/env ruby
-# Usage: gitio URL [CODE]
-#
-# Turns a github.com URL
-#  into a git.io URL
-#
-# Copies the git.io URL to your clipboard.
 
-url  = ARGV[0]
-code = ARGV[1]
+<h2>My First JavaScript</h2>
 
-if url !~ /^(https?:\/\/)?(gist\.)?github.com/
-  abort "* github.com URLs only"
-end
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
 
-if url !~ /^http/
-  url = "https://#{url}"
-end
-
-if code
-  code = "-F code=#{code}"
-end
-
-output = `curl -i http://git.io -F 'url=#{url}' #{code} 2> /dev/null`
-if output =~ /Location: (.+)\n?/
-  puts $1
-  `echo #$1 | pbcopy`
-else
-  puts output
-end
+<p id="demo"></p>
  
  
 <h2>Link Titles</h2>
